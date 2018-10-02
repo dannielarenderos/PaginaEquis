@@ -47,8 +47,7 @@ header{
     height: 100%;
     width: 100%;
     object-fit: contain;
-    position: relative;
-    top: 2em;
+
 }
 header div{
     margin-top: 5em;
