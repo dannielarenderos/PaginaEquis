@@ -1,0 +1,419 @@
+body {
+    margin: 0;
+    height: 100%;
+    background-color: #4b379a;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+
+header {
+    background-image: url(img/1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 26em;
+    width: 100%;
+    color: #ffffffff;
+    font-weight: initial;
+
+}
+
+
+.container{
+    background-color: #ffffffff;
+    height: 100%;
+    width: 100%;
+}
+
+.navegador {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border-bottom: black 2px solid;
+}
+
+
+.back{
+    position: relative;
+    width: 100%;
+    height: 100%;     
+    background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
+    opacity: 0.8;
+
+}
+
+h1 {
+    font-size: 6em;
+    font-weight: bold;
+
+}
+.navegador div img {
+    padding-left: 3%;
+}
+
+.navegador div ul li {
+    display: inline;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    padding: 3em;
+
+}
+
+
+a {
+    text-decoration: none;
+    color: #ffffffff;
+}
+
+
+.menuHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 6em;
+}
+
+.menuHeader div {
+    line-height: 0.25em;
+    padding: 0;
+}
+
+
+
+.botonBlan {
+    border-radius: 2em;
+    display: block;
+    border: solid;
+    background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
+    color: #ffffffff;
+    border-width: 1px;
+    padding: 0.6em 1.6em;
+    margin: 0 auto;
+    text-decoration: none;
+    color: none;
+
+}
+
+.boton {
+    border-radius: 2em;
+    display: block;
+    border: solid;
+    color: #ffffffff;
+    background: #00000000;
+    border-width: 1px;
+    padding: 0.6em 1.6em;
+    text-decoration: none;
+    color: none;
+
+}
+
+/* 2 section*/
+.SeccionBlanca{
+    background-color: #493434;
+}
+.SeccionBlanca h2 span{
+color: #222222;
+}
+
+.SeccionBlanca div {
+    padding: 0 5%;
+}
+.SeccionBlanca {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    font-size: 1em;
+    padding: 7%;
+}
+
+.imgBlanca img
+{
+    width: 100%;
+    padding-top: 10%;
+
+}
+
+
+/* TERCERO */
+
+.paralh {
+    background-image: url(img/3.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    color: #ffffffff;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+
+}
+
+.mar{
+padding: 10%;
+
+}
+
+/* CUARTO */
+
+.Imagenes {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+    margin: 1em;
+}
+
+.Imagenes img {
+    background-size: cover;
+}
+.SeccionPa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.SeccionPa .Bu{
+    position: relative;
+    left: 40%;
+}
+
+/* QUINTA */
+
+.Imgad {
+    background-image: url(img/5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 26em;
+    width: 100%;
+    color: #ffffffff;
+    font-weight: initial;
+}
+.Quinto {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
+    opacity: 0.8;
+    font-size: 1.4em;
+}
+
+.centered{
+    width: 100%;
+    height: 100%;
+}
+
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+.Imagenes:hover .image{
+    background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
+
+}
+.centered form{
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+.centered > form > .ContenedorInpu{
+    display: flex;
+    height: 100%;
+    width: 40%;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+#username, #email{
+    width: 100%;
+    height: 2em;
+}
+#mens{
+    width: 100%;
+    height: 4em;
+}
+.ContenedorInpu input{
+    background-color: rgba(250, 250, 250, 0.35);
+}
+
+
+/* SEXTO */
+
+.Sexto {
+    font-size: 1em;
+    text-align: center;
+}
+
+/* 7 */
+
+footer {
+    background-color: #222222;
+    font-size: 0.6em;
+    text-align: center;
+}
+
+footer nav {
+    margin: 20% 3%;
+    justify-content: center;
+}
+
+ li {
+    list-style: none;
+    text-decoration: none;
+    padding: 0 0.7em;
+}
+a {
+    text-decoration: none;
+}
+
+.red
+{
+    justify-content: space-between;
+}
+
+
+
+
+
+/* MEDIA */
+
+
+
+
+@media only screen and (max-width: 458) {
+    li {
+width: 100%;    }
+
+
+    }
+
+@media  only screen and (max-width: 510px)
+{
+
+    .container{
+        margin: 0;
+        width: 100%; 
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+   
+    
+    .texto{ 
+        font-size: 0.7em; 
+
+    }
+     
+    .texto1{ 
+        font-size: 0.7em; 
+        padding: 0 5%;
+
+    }
+
+    .imgBlanca img
+    {
+        width: 100%;
+        padding-top: 10%;
+    }
+    .SeccionBlanca {
+        grid-template-columns: 1fr;
+    }
+    
+    .SeccionPa {
+        padding: 5% 5% 0 5%; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: justify;
+        margin-bottom: 3%;
+    }
+
+    .texto1{
+        margin-top: 0;
+    }
+
+    .text2 {
+        font-size: 0.2em;
+    }
+
+
+    .paralh {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    h2 {
+        padding: 5%;
+    }
+
+    .Bu {
+    margin: 4% 3%;
+    }
+
+   
+    .Imagenes {
+        grid-template-columns: 90%;
+    }
+
+    .Imagenes img {
+        width: 100% ;
+    }
+
+   li {
+       width: 1em;
+   }
+
+
+   .boton2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.ContenedorInpu
+{
+    margin-right: 3%;
+}
+
+#mens {
+    height: 0.5em;
+}
+
+.centered{
+    margin-bottom: 0%;
+}
+
+}
+
+
+footer p span {
+    color:#4b379a;
+}
+
+
+footer nav {
+    margin: 10% 0;
+}
+.red
+{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1em;
+    padding: 0 0.5em;    
+}
+

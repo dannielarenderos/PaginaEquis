@@ -1,0 +1,213 @@
+:root {
+    box-sizing: border-box;
+    font-size: calc(0.5em + 1vw);
+
+}
+*, 
+::before, 
+::after {
+    box-sizing: inherit;
+}
+header{
+    font-family:'Monoton', cursive;
+    height: 100vh;
+    width: 100%;
+    background: url(img/concierto.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navPrincipal{
+    background-color: #423b3b;
+    color: whitesmoke;
+    margin-top: 0;
+    width: 100%;
+}
+.navPrincipal ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+}
+.navPrincipal ul li{
+    color: #fafafa;
+    list-style: none;
+    padding: 1em;
+}
+.navPrincipal ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.logo{
+    height:80px;
+    width:80px;
+}
+
+.logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    position: relative;
+    top: 2em;
+}
+header div{
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    grid-column-gap: .3em;
+    width: 100%;
+}
+main h3{
+    text-transform: capitalize;
+    color: brown;
+}
+.imgF{
+    max-height: 250px;
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+main img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    position: relative;
+    top: 2em;
+}
+main div{
+    padding: 0 .5em .5em .5em;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    border-radius: 0.5em;
+    border: 1px #c4c4be solid;
+    margin: 5px;
+}
+.read{
+    border: none;
+    padding: 2em;
+    margin-bottom: 2em;
+    background-color: #f1970e;
+    color:white;
+    border-radius: 0.5em;
+    width: 100%;
+    text-align: center;
+}
+.read:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+#suscribirse{
+    background-image: url(img/contacus.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 70vh;
+}
+.back{
+    color: white;
+
+    position: relative;
+    width: 100%;
+    height: 100%;     
+    background-image: -webkit-linear-gradient(0deg, #f1970e 0%, #dd574d 80%);
+    opacity: 0.6;
+
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-column-gap: .8em;
+}
+.back div:nth-child(1){
+    height: 100%;
+    width: 70%;
+    margin-left: 6em;
+}
+.back form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.back form label{
+    padding: 0;
+    margin: 0;
+}
+.back form input{
+    border-radius: 6px;
+    height: 3em;
+}
+.back form #comm{
+    height: 8em;
+}
+.back div:nth-child(2){
+    position: relative;
+    top: 1em;
+    padding: 1em;
+    height: 90%;
+    border-radius: 10px;
+    background: rgba(88, 70, 70, 0.3);
+    backface-visibility: 0.3;
+}
+footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    background: #291717;
+    color: white;
+    justify-content: space-around;
+}
+footer ul{
+    list-style: none;
+}
+footer ul li a{
+    text-decoration: none;
+    color: wheat;
+}
+
+@media only screen and (max-width: 620px) {
+    main{
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    main{
+        grid-template-columns: 100%;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .back div{
+        height: 80%;
+        width: 100%;
+        margin-left: 1em;
+        padding: 0;
+    }
+    .back div:nth-child(1){
+        height: 100%;
+        width: 100%;
+        margin-left: 0;
+    }
+    .back div:nth-child(2){
+        position: relative;
+        top: 1em;
+        height: 90%;
+        border-radius: 10px;
+        background: rgba(88, 70, 70, 0.3);
+        backface-visibility: 0.3;
+        left: 1em;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .back{
+        grid-template-columns: 100%;
+        grid-template-rows: 45% 45%;
+    }
+}
